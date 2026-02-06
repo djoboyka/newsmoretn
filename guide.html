@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete travel guide to Tunisia. Visa requirements, transportation, safety tips, and best times to visit for a hassle-free vacation.">
+    <title>Travel Guide - NewsMoreTn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cobalt: '#0055A4',
+                        sand: '#E6DCC3',
+                        'sand-dark': '#C19A6B',
+                        slate: '#64748B',
+                        offwhite: '#F8FAFC',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="flex flex-col min-h-screen text-slate-700 bg-offwhite">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <span class="text-2xl font-bold text-cobalt tracking-tight">NewsMoreTn</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-slate-600 hover:text-cobalt transition-colors">Home</a>
+                    <a href="destinations.html" class="text-slate-600 hover:text-cobalt transition-colors">Destinations</a>
+                    <a href="guide.html" class="text-cobalt font-medium transition-colors">Travel Guide</a>
+                    <a href="culture.html" class="text-slate-600 hover:text-cobalt transition-colors">Culture</a>
+                    <a href="about.html" class="text-slate-600 hover:text-cobalt transition-colors">About</a>
+                    <a href="contact.html" class="px-5 py-2.5 rounded-full bg-cobalt text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30 font-medium">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" class="text-slate-600 hover:text-cobalt focus:outline-none p-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden bg-white border-t border-slate-100">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-cobalt hover:bg-slate-50">Home</a>
+                <a href="destinations.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-cobalt hover:bg-slate-50">Destinations</a>
+                <a href="guide.html" class="block px-3 py-3 rounded-md text-base font-medium text-cobalt bg-blue-50">Travel Guide</a>
+                <a href="culture.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-cobalt hover:bg-slate-50">Culture</a>
+                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-cobalt hover:bg-slate-50">About</a>
+                <a href="contact.html" class="block px-3 py-3 mt-4 text-center rounded-lg bg-cobalt text-white font-medium">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-slate-900 text-white pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-bold mb-4">Travel Guide</h1>
+            <p class="text-xl text-slate-300 max-w-2xl mx-auto">Everything you need to know for a safe and memorable trip to Tunisia.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+        
+        <!-- Section: When to Go -->
+        <section id="best-time" class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+            <div class="flex items-center mb-6">
+                <div class="p-3 bg-blue-50 text-cobalt rounded-lg mr-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-900">Best Time to Visit</h2>
+            </div>
+            <div class="space-y-4 text-slate-600">
+                <p>Tunisia is a year-round destination, but the experience varies by season:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Spring (March to May):</strong> The ideal time. Temperatures are mild (20-25°C), the countryside is green and blooming with wildflowers. Perfect for sightseeing and desert trips.</li>
+                    <li><strong>Summer (June to August):</strong> Hot and dry. Coastal resorts are busy with beachgoers. Temperatures can exceed 35°C, making sightseeing difficult in the interior.</li>
+                    <li><strong>Autumn (September to November):</strong> Similar to spring, with warm seas perfect for swimming until late October. The date harvest in the south begins in late October.</li>
+                    <li><strong>Winter (December to February):</strong> Mild but can be rainy in the north. Nights in the desert are very cold. Good for cultural tourism without crowds.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section: Visa -->
+        <section id="visa" class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+             <div class="flex items-center mb-6">
+                <div class="p-3 bg-orange-50 text-sand-dark rounded-lg mr-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-900">Visa Requirements</h2>
+            </div>
+            <div class="text-slate-600">
+                <p class="mb-4">Tunisia has a liberal visa policy to encourage tourism.</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Visa-Free:</strong> Citizens of the US, Canada, UK, EU countries, Australia, and many others can enter Tunisia visa-free for up to 90 days.</li>
+                    <li><strong>Passport Validity:</strong> Ensure your passport is valid for at least 6 months beyond your date of entry.</li>
+                    <li><strong>Arrival Card:</strong> You will need to fill out a simple landing card upon arrival. Keep the departure portion safe until you leave.</li>
+                </ul>
+                <p class="mt-4 text-sm text-slate-500 bg-slate-50 p-3 rounded">Note: Always check with your local Tunisian embassy for the most up-to-date regulations before traveling.</p>
+            </div>
+        </section>
+
+        <!-- Section: Transport -->
+        <section id="transport" class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+             <div class="flex items-center mb-6">
+                <div class="p-3 bg-green-50 text-green-600 rounded-lg mr-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-900">Getting Around</h2>
+            </div>
+            <div class="space-y-4 text-slate-600">
+                <div>
+                    <h3 class="font-bold text-slate-800">Louages (Shared Taxis)</h3>
+                    <p>The most popular way to travel between cities. These are white vans with a colored stripe (red for long distance). They leave when full, are cheap, and relatively fast.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-800">Trains</h3>
+                    <p>The SNCFT network connects major cities like Tunis, Sousse, Sfax, and Gabes. Trains are comfortable and scenic but can be slower than louages.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-800">Taxis</h3>
+                    <p>Yellow taxis are for travel within city limits. Always ask the driver to use the meter ("Compteur").</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-800">Car Rental</h3>
+                    <p>Available at airports and major cities. Driving allows freedom to explore remote ruins, but be aware that local driving styles can be aggressive.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Safety -->
+        <section id="safety" class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+             <div class="flex items-center mb-6">
+                <div class="p-3 bg-red-50 text-red-500 rounded-lg mr-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-900">Safety & Etiquette</h2>
+            </div>
+            <ul class="list-disc pl-5 space-y-3 text-slate-600">
+                <li><strong>General Safety:</strong> Tunisia is generally safe for tourists, especially in resort areas and major cities. Tourism police are visible in popular spots.</li>
+                <li><strong>Dress Code:</strong> While liberal, Tunisia is a Muslim country. Beachwear is fine on the beach, but dress modestly (shoulders and knees covered) when visiting religious sites or rural towns.</li>
+                <li><strong>Haggling:</strong> Essential in the Souks (markets). It's part of the culture. Start at 50% of the asking price and work your way to a mutually happy number.</li>
+                <li><strong>Water:</strong> Tap water is generally safe in major cities but can taste strongly of chlorine. Bottled water is cheap and widely recommended for tourists.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-1">
+                    <a href="index.html" class="text-2xl font-bold text-white mb-4 block">NewsMoreTn</a>
+                    <p class="text-sm text-slate-400">Your premium guide to exploring the beauty, history, and culture of Tunisia.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Destinations</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="destination-sidi-bou-said.html" class="hover:text-white transition-colors">Sidi Bou Said</a></li>
+                        <li><a href="destination-carthage.html" class="hover:text-white transition-colors">Carthage</a></li>
+                        <li><a href="destination-sahara.html" class="hover:text-white transition-colors">Sahara Desert</a></li>
+                        <li><a href="destination-djerba.html" class="hover:text-white transition-colors">Djerba</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="legal/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="legal/terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                         <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                        </a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465C9.673 2.013 10.03 2 12.48 2h.167zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.337-3.235a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-slate-800 text-center text-sm text-slate-500">
+                <p>&copy; <span id="current-year">2026</span> NewsMoreTn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

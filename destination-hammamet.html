@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tunisia's premier beach resort town with a historic medina and vibrant nightlife.">
+    <title>Hammamet - NewsMoreTn Destination Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cobalt: '#0055A4',
+                        sand: '#E6DCC3',
+                        'sand-dark': '#C19A6B',
+                        slate: '#64748B',
+                        offwhite: '#F8FAFC',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="flex flex-col min-h-screen text-slate-700 bg-offwhite">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <span class="text-2xl font-bold text-cobalt tracking-tight">NewsMoreTn</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-slate-600 hover:text-cobalt transition-colors">Home</a>
+                    <a href="destinations.html" class="text-cobalt font-medium transition-colors">Destinations</a>
+                    <a href="guide.html" class="text-slate-600 hover:text-cobalt transition-colors">Travel Guide</a>
+                    <a href="culture.html" class="text-slate-600 hover:text-cobalt transition-colors">Culture</a>
+                    <a href="about.html" class="text-slate-600 hover:text-cobalt transition-colors">About</a>
+                    <a href="contact.html" class="px-5 py-2.5 rounded-full bg-cobalt text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30 font-medium">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" class="text-slate-600 hover:text-cobalt focus:outline-none p-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden bg-white border-t border-slate-100">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-cobalt hover:bg-slate-50">Home</a>
+                <a href="destinations.html" class="block px-3 py-3 rounded-md text-base font-medium text-cobalt bg-blue-50">Destinations</a>
+                <a href="guide.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-cobalt hover:bg-slate-50">Travel Guide</a>
+                <a href="culture.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-cobalt hover:bg-slate-50">Culture</a>
+                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-cobalt hover:bg-slate-50">About</a>
+                <a href="contact.html" class="block px-3 py-3 mt-4 text-center rounded-lg bg-cobalt text-white font-medium">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative pt-32 pb-20 bg-slate-900 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/hammamet.jpg" alt="Hammamet" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <a href="destinations.html" class="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Destinations
+            </a>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Hammamet</h1>
+            <p class="text-xl text-white/90 max-w-2xl mx-auto font-light">Tunisia's premier beach resort town with a historic medina and vibrant nightlife.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Left Column: Content -->
+                <div class="lg:col-span-2 space-y-8">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">About Hammamet</h2>
+                        <p class="text-slate-600 leading-relaxed text-lg">Hammamet is a favorite destination for sun-seekers, offering miles of sandy beaches and turquoise waters. But it's not just about the beach; the historic Medina with its fortress (Kasbah) offers a glimpse into the past. The modern Yasmine Hammamet area features a marina and theme parks.</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-6">Key Highlights</h2>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            
+        <li class="flex items-center text-slate-600">
+            <svg class="w-5 h-5 text-sand-dark mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            The Medina & Kasbah
+        </li>
+        
+        <li class="flex items-center text-slate-600">
+            <svg class="w-5 h-5 text-sand-dark mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Hammamet Beach
+        </li>
+        
+        <li class="flex items-center text-slate-600">
+            <svg class="w-5 h-5 text-sand-dark mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            International Cultural Center
+        </li>
+        
+        <li class="flex items-center text-slate-600">
+            <svg class="w-5 h-5 text-sand-dark mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Yasmine Hammamet Marina
+        </li>
+        
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Sidebar -->
+                <div class="lg:col-span-1 space-y-8">
+                    <!-- Quick Facts Widget -->
+                    <div class="bg-blue-50 rounded-2xl p-6 border border-blue-100">
+                        <h3 class="text-lg font-bold text-cobalt mb-4">Plan Your Visit</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-cobalt mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <div>
+                                    <span class="block font-medium text-slate-900">Best Time to Visit</span>
+                                    <span class="text-sm text-slate-600">Spring (Mar-May) or Autumn (Sep-Nov)</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-cobalt mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                                <div>
+                                    <span class="block font-medium text-slate-900">Recommended Stay</span>
+                                    <span class="text-sm text-slate-600">2-3 Days</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="guide.html" class="block w-full text-center px-4 py-2 bg-cobalt text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm">Read Full Travel Guide</a>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Mini -->
+                    <div class="bg-slate-900 rounded-2xl p-6 text-white">
+                        <h3 class="text-lg font-bold mb-2">More Tunisia Tips?</h3>
+                        <p class="text-slate-400 text-sm mb-4">Subscribe for our latest guides and hidden gems.</p>
+                        <form class="space-y-2">
+                            <input type="email" placeholder="Email address" class="w-full px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 focus:outline-none focus:border-cobalt text-sm">
+                            <button type="button" class="w-full px-4 py-2 bg-sand text-slate-900 font-bold rounded-lg hover:bg-white transition-colors text-sm">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-1">
+                    <a href="index.html" class="text-2xl font-bold text-white mb-4 block">NewsMoreTn</a>
+                    <p class="text-sm text-slate-400">Your premium guide to exploring the beauty, history, and culture of Tunisia.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Destinations</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="destination-sidi-bou-said.html" class="hover:text-white transition-colors">Sidi Bou Said</a></li>
+                        <li><a href="destination-carthage.html" class="hover:text-white transition-colors">Carthage</a></li>
+                        <li><a href="destination-sahara.html" class="hover:text-white transition-colors">Sahara Desert</a></li>
+                        <li><a href="destination-djerba.html" class="hover:text-white transition-colors">Djerba</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="legal/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="legal/terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                         <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                        </a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465C9.673 2.013 10.03 2 12.48 2h.167zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.337-3.235a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-slate-800 text-center text-sm text-slate-500">
+                <p>&copy; <span id="current-year">2026</span> NewsMoreTn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
